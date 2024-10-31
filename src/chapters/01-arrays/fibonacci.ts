@@ -1,10 +1,7 @@
-export function getFibonacci() {
-  const fibonacci = [];
-  fibonacci[0] = 0;
-  fibonacci[1] = 1;
-  fibonacci[2] = 1;
+export function getFibonacciSequence(sequenceQuantity: number) {
+  const fibonacci = [0, 1];
 
-  for (let index = 3; index < 20; index++) {
+  for (let index = 2; index < sequenceQuantity; index++) {
     fibonacci[index] = fibonacci[index - 1] + fibonacci[index - 2];
   }
 
